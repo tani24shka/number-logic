@@ -1,0 +1,13 @@
+int calcGCD(int n, int m){
+    int j,sum;
+    if(n>m)
+    j=m;
+    else
+    j=n;
+    for(int i=1;i<=j;i++)
+    {
+        if(n%i==0 && m%i==0)
+        sum=i;
+    }
+    return sum;
+}
