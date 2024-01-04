@@ -1,0 +1,21 @@
+bool checkArmstrong(int n){
+	//Write your code here
+	int c=0;
+	int num=n;
+	int j=n;
+	int sum=0;
+	while(n!=0)
+	{
+		c++;
+		n=n/10;
+	}
+	while(num!=0)
+	{
+		int d=num%10;
+		sum=sum+pow(d,c);
+		num=num/10;
+	}
+    if(sum==j)
+	return true;
+	return false;
+}
